@@ -19,10 +19,10 @@ Requires Node.js 22.22 or newer. The demo uses `theme: ./`, so it works independ
 
 ## Use in another deck
 
-Until the first npm release is available, install from GitHub:
+Install the theme from npm:
 
 ```sh
-npm install -D github:liuyh06/slidev-theme-cmr
+npm install -D slidev-theme-cmr --registry=https://registry.npmjs.org
 ```
 
 ```yaml
@@ -31,7 +31,7 @@ theme: cmr
 ---
 ```
 
-After the package has been published, the registry install command is `npm install -D slidev-theme-cmr`. The GitHub demo, npm package, and curated Slidev gallery submission are separate release steps.
+You can also install from source with `npm install -D github:liuyh06/slidev-theme-cmr`. The GitHub demo, npm package, and curated Slidev gallery submission are separate release steps.
 
 ## Layouts
 

@@ -60,7 +60,8 @@
     "playwright-chromium": "1.64.1"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "slidev": {
     "colorSchema": "light",

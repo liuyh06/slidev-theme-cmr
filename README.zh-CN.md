@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-需要 Node.js >=22.22。示例图片从英伟达官方站点加载，需要网络。其他项目可以先通过 `npm install -D github:liuyh06/slidev-theme-cmr` 安装，再设置 `theme: cmr`。npm 首次发布后可直接安装 `slidev-theme-cmr`，是否已发布请查看 npm。
+需要 Node.js >=22.22。示例图片从英伟达官方站点加载，需要网络。其他项目通过 `npm install -D slidev-theme-cmr --registry=https://registry.npmjs.org` 安装，再设置 `theme: cmr`。也可以使用 `npm install -D github:liuyh06/slidev-theme-cmr` 从源码安装。
 
 `npm run starter` 打开通用 10 页写作起始稿；`example.md` 为扩展的 18 页完整布局示例。
 

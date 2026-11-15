@@ -11,10 +11,10 @@ Run `npm run check`, `npm run build`, `npm run build:starter`, and `npm pack --d
 Authenticate interactively with `npm login` in your own terminal. Never paste a password, OTP, or token into a chat or issue. Then run:
 
 ```sh
-npm publish --access public
+npm publish --access public --registry=https://registry.npmjs.org
 ```
 
-Version 0.1.0 is the initial release candidate. Check registry availability immediately before publishing. A packed release candidate is not proof that the registry version has been published.
+The initial package version is 0.1.0. Check registry availability immediately before publishing. A packed release candidate is not proof that the registry version has been published.
 
 ## Release contents and sensitive information
 

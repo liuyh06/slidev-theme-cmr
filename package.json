@@ -32,7 +32,9 @@
     "LICENSE",
     "THIRD_PARTY_NOTICES.md",
     "scripts/check-package.mjs",
-    "docs",
+    "docs/layout-coverage.md",
+    "docs/publishing.md",
+    "docs/gallery-entry.ts",
     "screenshots/overview.png"
   ],
   "scripts": {

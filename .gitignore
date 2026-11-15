@@ -7,3 +7,14 @@ dist-starter/
 .env*
 .npmrc
 .DS_Store
+
+# Local credentials, audit reports and backups must remain outside releases.
+*.log
+*.pem
+*.key
+*.p12
+*.pfx
+*.bundle
+.ssh/
+credentials*.json
+secret-audit/

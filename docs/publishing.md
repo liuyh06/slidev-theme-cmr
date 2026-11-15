@@ -16,6 +16,12 @@ npm publish --access public
 
 Version 0.1.0 is the initial release candidate. Check registry availability immediately before publishing. A packed release candidate is not proof that the registry version has been published.
 
+## Release contents and sensitive information
+
+The npm package uses an explicit allowlist of runtime files, the example and starter, selected documentation, and the overview screenshot. Do not replace it with a broad repository export. Raw reference slides, local paths, authentication configuration, private keys, logs, and audit backups must stay outside the public repository and npm package.
+
+Before a release, inspect the actual `npm pack --dry-run --json` file list and run a redacted secret scan over Git history as well as the unpacked tarball. Check generated website assets too. Commit author metadata is separate from file content; use the maintainer-approved identity when committing. Audit reports and backups are local records and should not be uploaded with the package.
+
 ## GitHub Pages
 
 The Pages workflow installs from the lockfile, builds the example with the repository base path, uploads dist, and deploys using GitHub Actions. Repository Settings → Pages must use GitHub Actions as the build source. The package does not need to be published for the source example to build.

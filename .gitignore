@@ -1,0 +1,9 @@
+node_modules
+dist/
+dist-starter/
+*.tgz
+*.pdf
+*.pptx
+.env*
+.npmrc
+.DS_Store

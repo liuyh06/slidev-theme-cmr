@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const pkg=JSON.parse(fs.readFileSync('package.json','utf8'));
+assert.equal(pkg.name,'slidev-theme-cmr');assert.notEqual(pkg.private,true);
+assert(pkg.keywords.includes('slidev-theme')&&pkg.keywords.includes('slidev'));
+const text=fs.readFileSync('example.md','utf8');
+const layouts=[...text.matchAll(/^layout: (.+)$/gm)].map(m=>m[1]);
+assert.equal(layouts.length,18);assert.equal(new Set(layouts).size,18);
+for(const layout of layouts)assert(fs.existsSync(`layouts/${layout}.vue`),layout);
+assert(!/\/mnt\/|\/home\/|theme: \.\.\//.test(text));
+for(const match of text.matchAll(/src="(\/[^"\n]+)"/g))throw new Error(`Unexpected local demo asset: ${match[1]}`);
+const decor=fs.readFileSync('components/CmrDecor.vue','utf8');assert(decor.includes('-45'));assert(decor.includes('135'));
+for(const f of ['LICENSE','README.md','README.zh-CN.md','THIRD_PARTY_NOTICES.md'])assert(fs.existsSync(f),f);
+console.log('18 distinct layouts, portable example paths and source-derived diagonal decorations verified.');

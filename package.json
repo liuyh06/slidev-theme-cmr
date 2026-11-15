@@ -1,0 +1,75 @@
+{
+  "name": "slidev-theme-cmr",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A light, deep-blue Slidev theme for Chinese technical talks, with 18 layouts and a complete NVIDIA example.",
+  "author": "liuyh06",
+  "license": "MIT",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "presentation",
+    "chinese",
+    "technical",
+    "light"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuyh06/slidev-theme-cmr.git"
+  },
+  "homepage": "https://liuyh06.github.io/slidev-theme-cmr/",
+  "bugs": {
+    "url": "https://github.com/liuyh06/slidev-theme-cmr/issues"
+  },
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "example.md",
+    "starter.md",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "scripts/check-package.mjs",
+    "docs",
+    "screenshots/overview.png"
+  ],
+  "scripts": {
+    "dev": "slidev example.md --port 3043",
+    "starter": "slidev starter.md",
+    "build": "slidev build example.md --base /slidev-theme-cmr/",
+    "build:starter": "slidev build starter.md --out dist-starter",
+    "export": "slidev export example.md --output example.pdf --with-clicks false",
+    "screenshots": "slidev export example.md --format png --output screenshots --with-clicks false",
+    "check": "node scripts/check-package.mjs",
+    "prepack": "npm run check"
+  },
+  "engines": {
+    "node": ">=22.22.0",
+    "slidev": ">=53.1.0"
+  },
+  "peerDependencies": {
+    "@slidev/cli": ">=53.1.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "53.1.0",
+    "@slidev/theme-default": "0.25.0",
+    "playwright-chromium": "1.64.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "aspectRatio": "16/9",
+      "canvasWidth": 960,
+      "fonts": {
+        "sans": "Noto Sans CJK SC",
+        "local": "Noto Sans CJK SC",
+        "provider": "none"
+      }
+    }
+  }
+}

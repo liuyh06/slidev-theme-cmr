@@ -9,7 +9,7 @@
 .cmr.nvidia-demo .nv-cover-sub {font-size:27px;letter-spacing:.025em;margin:0 0 32px;}
 .cmr.nvidia-demo .nv-cover-line {font-size:15px;color:#6d7484;margin-top:22px;}
 .cmr.nvidia-demo.cmr-cover .cmr-tag {font-size:17px;padding:5px 20px;}
-.cmr.nvidia-demo.cmr-contents main {margin:30px 78px 0 245px;width:auto;}
+.cmr.nvidia-demo.cmr-contents main {margin:24px 36px 0 360px;width:auto;}
 .cmr.nvidia-demo.cmr-contents ol {font-size:29px;}
 .cmr.nvidia-demo.cmr-contents li {margin:19px 0;padding-left:17px;line-height:1.5;}
 .cmr.nvidia-demo.cmr-contents small {font-size:15px;letter-spacing:.02em;line-height:1.5;}
@@ -42,7 +42,7 @@
 .cmr.nvidia-demo .nv-product-copy {font-size:19px;line-height:1.8;margin:12px 0;}
 .cmr.nvidia-demo .nv-rack {margin:0;text-align:center;}
 .cmr.nvidia-demo .nv-rack img {height:350px;width:100%;object-fit:cover;object-position:center;border-radius:3px;}
-.cmr.nvidia-demo figure figcaption {font-size:12px;color:#7a8090;line-height:1.6;margin-top:10px;}
+.cmr.nvidia-demo .nv-rack figcaption, .cmr.nvidia-demo .nv-sim figcaption {font-size:12px;color:#7a8090;line-height:1.6;margin-top:10px;}
 .cmr.nvidia-demo.cmr-image-right main {grid-template-columns:1.05fr .95fr;}
 .cmr.nvidia-demo.cmr-image-left main {grid-template-columns:1.05fr .95fr;}
 .cmr.nvidia-demo .nv-sim {margin:0;}
